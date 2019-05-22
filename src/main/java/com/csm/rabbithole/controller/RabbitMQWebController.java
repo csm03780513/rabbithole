@@ -22,7 +22,7 @@ public class RabbitMQWebController {
         emp.setEmpName(empName);
         rabbitMQSender.send(emp);
 
-        return "Message sent to the RabbitMQ JavaInUse Successfully";
+        return "Message sent to the RabbitMQ Successfully";
 
     }
 }

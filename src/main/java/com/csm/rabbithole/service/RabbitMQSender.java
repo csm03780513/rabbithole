@@ -19,7 +19,7 @@ public class RabbitMQSender {
 
     public void send(Employee company){
 
-        amqpTemplate.convertAndSend(exchange,routingkey,company);
-        System.out.println("Send msg = " + company);
+        amqpTemplate.convertAndSend(exchange,routingkey,"message here".getBytes());
+        System.out.println("Send msg = " + company.toString().getBytes());
     }
 }
